@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Amor elephant!</title>
+  <meta name="A website that shows details of random elephants" content="Elephants">
+  <meta name="Marius Evans" content="Marius Evans">
+
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="icon" href="img/favicon.ico" />
+
+</head>
+
+<body>
+  <header>
+    <p id="top-of-page">Amor elephant!</p>
+    <p>Explore the elephants of Wikipedia</p>
+    <button onClick="window.location.reload();">Refresh</button>
+  </header>
+
+  <div class="fa-3x">
+    <i class="fas fa-spinner fa-pulse"></i>
+  </div>
+
+  <section>
+    <div id="intro"></div>
+    <div id="dobdod"></div>
+    <div id="affiliation"></div>
+    <div id="note"></div>
+    <a id="wikilink"><img id="image" alt="Image of elephant"></image></a>
+  </section>
+
+  <footer>
+    <a class="up-arrow" href="#top-of-page">
+      <i class="fas fa-chevron-up"></i>
+    </a><br>
+
+    &copy; <a href="https://mariusevans.github.io/portfolio/" class="tooltip">Marius Evans
+      <span class="tooltiptext">Go to my website</span></a>, made with the <a
+      href="https://elephant-api.herokuapp.com/?ref=public-apis" class="tooltip">Elephant API
+      <span class="tooltiptext">Go to the Elephant API website</span></a>.<br />
+    Consider donating to help elephants:<br />
+    <a href="https://www.savetheelephants.org/about-ste-2/funding/" class="tooltip">Save the Elephants
+    <span class="tooltiptext">Go to STE website</span></a>,
+    <a href="https://support.wwf.org.uk/adopt-an-elephant" class="tooltip">WWF
+    <span class="tooltiptext">Go to the WWF website</span></a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

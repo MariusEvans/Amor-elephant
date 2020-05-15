@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #c1c8d6, #c7d3f0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #c1c8d6, #c7d3f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Crete Round', serif;
+}
+
+header p:first-of-type {
+  font-size: 2.1em;
+  margin: 0;
+  padding: 0.5em;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #2e416d;
+  text-decoration-color: #2e416d;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+
+header p:nth-child(2){
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  padding: 0;
+}
+
+.fa-3x{
+  padding: 1.5em;
+  font-size: 4em;
+}
+
+header {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+section {
+  text-align: left;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 50px;
+  color: black;
+}
+
+section div {
+  font-size: 1.8em;
+  padding: 0.2em;
+  display: none;
+}
+
+#dobdod, #affiliation{
+  font-size: 1em;
+}
+
+#note{
+  font-size: 1.2em;
+  width: 80%;
+}
+
+#image{
+  padding: 5px;
+  border-radius: 20px;
+  width: 90%;
+  display: none;
+}
+
+#image:hover{
+  border: 3px solid #4b6cb7;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1.2em;
+  padding: 0.2em;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 1s;
+}
+
+footer {
+  display: none;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 20px;
+  padding: 0.9em;
+  font-size: 1.2em;
+  color: white;
+  background: #19243f;
+}
+
+footer a {
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: lightblue;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(0, 96, 141);
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(0, 96, 141) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
