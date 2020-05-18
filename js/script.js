@@ -4,6 +4,7 @@ var imageElement = document.getElementById("image");
 var dobDodElement = document.getElementById("dobdod");
 var wikiElement = document.getElementById("wikilink");
 var affiliationElement = document.getElementById("affiliation");
+var section = document.getElementById("elephantInfo");
 var elephant;
 
 fetch('https://cors-anywhere.herokuapp.com/https://elephant-api.herokuapp.com/elephants/random')
@@ -18,6 +19,8 @@ fetch('https://cors-anywhere.herokuapp.com/https://elephant-api.herokuapp.com/el
 
       if (elephant.name == undefined) {
         window.location.reload();
+      } else if(elephant.name == "Mary"){
+        elephant.image = "https://elephant-api.herokuapp.com/pictures/missing.jpg";
       }
 
       if (elephant.species == "Unavailable") {
@@ -45,11 +48,7 @@ fetch('https://cors-anywhere.herokuapp.com/https://elephant-api.herokuapp.com/el
       imageElement.src = elephant.image;
       wikiElement.href = elephant.wikilink;
 
-      introductionElement.style.display = "block";
-      dobDodElement.style.display = "block";
-      noteElement.style.display = "block";
-      affiliationElement.style.display = "block";
-      imageElement.style.display = "block";
+      section.style.display = "block";
       document.getElementsByTagName("footer")[0].style.display = "block";
     });
   })

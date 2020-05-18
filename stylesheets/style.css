@@ -1,17 +1,13 @@
 body {
   margin: 0;
   height: 100%;
-  background: #4b6cb7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #c1c8d6, #c7d3f0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #c1c8d6, #c7d3f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: black;
   text-align: center;
   font-family: 'Crete Round', serif;
 }
 
-header p:first-of-type {
-  font-size: 2.1em;
+.sitename {
+  font-size: 3em;
   margin: 0;
   padding: 0.5em;
   text-decoration: underline;
@@ -21,35 +17,52 @@ header p:first-of-type {
   text-decoration-style: wavy;
 }
 
-header p:nth-child(2){
+.description{
   margin: 0;
   margin-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1.5em;
   padding: 0;
 }
 
 .fa-3x{
+  color: white;
   padding: 1.5em;
   font-size: 4em;
 }
 
 header {
-  padding: 0.5em;
+  background: black;
+  color: white;
+  padding: 7em 2em;
   margin-bottom: 0.5em;
+  background-image: url("https://images.unsplash.com/photo-1547399300-7613d8f5f8f1?ixlib=rb-1.2.1&w=1000&q=80");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-section {
+.elephant-info {  
+  display: none;
+  margin-top: 50px;
+  padding: 50px;
+  width: 60%;
+  position: relative;
   text-align: left;
   margin: 0 auto;
-  width: 60%;
-  margin-bottom: 50px;
-  color: black;
+  margin-bottom: 90px;
+  color: white;
 }
 
-section div {
+.elephant-info div {
   font-size: 1.8em;
   padding: 0.2em;
-  display: none;
+}
+
+#intro{
+  text-decoration: underline;
+  text-decoration-color: #b2b8c5;
 }
 
 #dobdod, #affiliation{
@@ -62,10 +75,9 @@ section div {
 }
 
 #image{
-  padding: 5px;
-  border-radius: 20px;
-  width: 90%;
-  display: none;
+  padding: 10px;
+  border-radius: 5%;
+  width: 80%;
 }
 
 #image:hover{
@@ -73,29 +85,46 @@ section div {
 }
 
 button {
-  border: 2px solid black;
+  color: white;
+  border: 2px solid white;
   border-radius: 5px;
   background-color: transparent;
-  font-size: 1.2em;
+  font-size: 1.5em;
   padding: 0.2em;
   transition: 1s;
 }
 
-button:hover {
+.button {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 3px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.button:hover{
   background-color: black;
   color: white;
   transition: 1s;
 }
 
+button:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
 footer {
   display: none;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  /*border-top-left-radius: 30px;
+  border-top-right-radius: 30px;*/
   margin-top: 20px;
-  padding: 0.9em;
+  padding: 2em;
   font-size: 1.2em;
   color: white;
-  background: #19243f;
+  background: rgb(27, 27, 27);
 }
 
 footer a {
